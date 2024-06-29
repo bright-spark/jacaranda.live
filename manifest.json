@@ -20,7 +20,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/index.html",
+  "start_url": "/jacarandafm/",
   "background_color": "#3e0c4c",
   "display": "standalone",
   "scope": "/",
