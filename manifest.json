@@ -1,7 +1,7 @@
 {
   "short_name": "Jacaranda FM",
-  "name": "Jacaranda FM Remixed",
-  "description": "Jacaranda FM Remixed Radio Player",
+  "name": "Jacaranda FM Fan App",
+  "description": "JacarandaRadio Player",
   "start_url": "/",
   "scope": "/",
   "background_color": "#3e0c4c",

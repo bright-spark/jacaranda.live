@@ -1,2 +1,2 @@
-# Jacaranda FM Remixed
-Jacaranda FM Fan App
+# Jacaranda FM
+JacarandaFan App
