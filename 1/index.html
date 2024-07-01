@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="disable-bounce">
+
+<head>
+  <title>Jacaranda FM Live</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Language" content="en" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta http-equiv="Content-Location" content="https://jacarandafm.live" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: filesystem: about: ws: wss:;" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="cleartype" content="on" />
+  <meta http-equiv="msthemecompatible" content="no" />
+  <meta http-equiv="imagetoolbar" content="no" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui, interactive-widget=resizes-content" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Jacaranda FM Live" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="Jacaranda FM Live" />
+  <meta name="theme-color" content="black" />
+  
+  <meta name="HandheldFriendly" content="True" />
+
+  <meta name="MobileOptimized" content="768" />
+  <meta name="MobileOptimized" content="640" />
+  <meta name="MobileOptimized" content="480" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="MobileOptimized" content="240" />
+  <meta name="MobileOptimized" content="160" />
+  <meta name="MobileOptimized" content="120" />
+  <meta name="MobileOptimized" content="96" />
+  <meta name="MobileOptimized" content="80" />
+  <meta name="MobileOptimized" content="64" />
+  <meta name="MobileOptimized" content="48" />
+  <meta name="MobileOptimized" content="32" />
+  <meta name="MobileOptimized" content="16" />
+    
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="address=no" />
+  <meta name="format-detection" content="email=no" />
+  <meta name="format-detection" content="date=no" />
+  <meta name="format-detection" content="time=no" />
+  <meta name="format-detection" content="url=no" />
+  <meta name="format-detection" content="calendar=no" />
+  <meta name="format-detection" content="shipping=no" />
+  <meta name="format-detection" content="tracking=no" />
+  <meta name="format-detection" content="flight=no" />
+  
+  <meta name="google" content="notranslate" />
+  <meta name="google" content="nositelinkssearchbox" />
+  
+  <meta name="Description" content="Jacaranda FM Live Radio Player" />
+  <meta name="Author" content="Martin Myburgh" />
+  <meta name="Copyright" content="Carbonized Red 2024" />
+  <meta name="Keywords" content="Free, Jacaranda FM, Live, Radio, Player, Perfect, Carbonized, PWA, Progressive Web App, Instant, Immersive, Marketing, Promotion, Creators, Influencers, Musicians, Audio" />
+  <meta name="Subject" content="Jacaranda FM" />
+
+  <meta property="og:url" content="https://jacarandafm.live" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Jacaranda FM" />
+  <meta property="og:description" content="Playing all the music you love!" />
+
+  <meta property="og:image" content="https://jacarandafm.live/img/77769.jpg" />
+  <meta property="og:image:alt" content="Jacaranda FM" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:secure_url" content="https://jacarandafm.live/img/77769.jpg" />
+  <meta property="og:image:url" content="https://jacarandafm.live/img/77769.jpg" />
+
+  <meta property="og:site_name" content="Jacaranda FM" />
+  <meta property="og:see_also" content="https://jacarandafm.live" />
+
+  <meta property="og:locale" content="en_ZA" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="og:locale:alternate" content="en_AU" />
+  <meta property="og:locale:alternate" content="en_CA" />
+  <meta property="og:locale:alternate" content="en_NZ" />
+  <meta property="og:locale:alternate" content="en_IE" />
+  <meta property="og:locale:alternate" content="en_IN" />
+  <meta property="og:locale:alternate" content="en_PK" />
+
+  <!--
+       Firefox, Firefox Android not supported: <meta name="theme-color" content="rgb(0,0,0)">
+       Solved: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
+       <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
+  -->
+
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./icons/apple-touch-icon.png">
+
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="msapplication-TileColor" content="rgb(0,0,0)">
+  <meta name="msapplication-TileImage" content="./icons/apple-touch-icon.png">
+  <meta name="msapplication-square70x70logo" content="./icons/apple-touch-icon.png">
+  <meta name="msapplication-square150x150logo" content="./icons/apple-touch-icon.png">
+  <meta name="msapplication-wide310x150logo" content="./icons/apple-touch-icon.png">
+
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  
+  <link rel="apple-touch-icon" sizes="16x16" href="./icons/apple-touch-icon-16x16.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="./icons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./icons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./icons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./icons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./icons/apple-touch-iconx114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./icons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./icons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./icons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="./icons/apple-touch-icon-192x192.png">
+  
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <link href="splashscreens/iphone5_splash.png"
+    media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
+    rel="apple-touch-startup-image" />    
+  <link href="splashscreens/iphone6_splash.png"
+    media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
+    rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphoneplus_splash.png"
+    media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)"
+    rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphonex_splash.png"
+    media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+    rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipad_splash.png"
+    media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)"
+    rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipadpro1_splash.png"
+    media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)"
+    rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipadpro2_splash.png"
+    media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
+    rel="apple-touch-startup-image" />
+
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/framework7-bundle.min.css">
+  <link rel="stylesheet" href="css/framework7-keypad.min.css">
+  <link rel="stylesheet" href="css/thorium.min.css">
+  <link rel="stylesheet" href="css/pages/index.css?r=70992">
+  <link rel="stylesheet" href="css/classes.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="theme-dark color-theme-purple">
+
+  <div id="app" class="framework7-root">
+    
+    <div class="panel-backdrop"></div>
+    
+    <div id="view-main" class="view view-main view-init safe-areas" data-url="/">
+      <div id="page" class="page" data-name="index">
+        <div id="page-contents-o-1004" class="page-content">
+          <div id="div-1005" class="embedweb embed-responsive w-100 embed-responsive-cover" data-href="/">
+            <iframe name="carbonized-view" id="iframe-1008" src="./listen-live.html"
+              frameborder="0" scrolling="no" allowfullscreen="true" allow="autoplay; encrypted-media"
+              class="embed-responsive-item"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/service-worker-register.js"></script>
+  <script type="text/javascript" src="js/framework/framework7-bundle.min.js"></script>
+  <script type="text/javascript" src="js/thorium.config.js"></script>
+  <script type="text/javascript" src="js/plugins/thorium.core.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+
+  <script>thoriumCorePlugin.appLoaded();</script>
+
+</body>
+
+</html>
