@@ -1,4 +1,4 @@
-# Mixed website
+# Fan website
 
 # Allow all user agents
 User-agent: *
