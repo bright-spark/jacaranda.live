@@ -1,3 +1,3 @@
 # Jacaranda Live
 
-#1 Jacaranda Fan App
+The #1 Jacaranda Fan App

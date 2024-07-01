@@ -1,13 +1,7 @@
-# robots.txt for Mixed website
+# Mixed website
 
 # Allow all user agents
 User-agent: *
-
-# Disallow CSP
-Disallow: /csp
-
-# Disallow access to icons directory
-Disallow: /icons/
 
 # Disallow access to images directory
 Disallow: /img/
@@ -15,11 +9,8 @@ Disallow: /img/
 # Disallow access to icons directory
 Disallow: /icons/
 
-# Disallow access to forms directory
-Disallow: /forms/
+# Disallow CSP directory
+Disallow: /csp
 
-# Disallow access to font-awesome directory
-Disallow: /font-awesome/
-
-# Disallow access to images directory
-Disallow: /css/
+# Disallow sponsor directory
+Disallow: /sponsor
