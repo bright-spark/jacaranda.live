@@ -1,22 +1,60 @@
-<div class="page">
-	<div class="navbar">
-	  <div class="navbar-inner sliding">
-		<div class="left">
-		  <a href="#" class="link back">
-			<i class="icon icon-back"></i>
-			<span class="ios-only">Close</span>
-		  </a>
-		</div>
-		<div class="title"></div>
-	  </div>
-	</div>
-	<div class="page-content">
-	  <div class="block block-strong">
-		<br>  
-		<h1 style="text-align: center">No Network</h1>
-		<h4 style="text-align: center">This page cannot be loaded</h4>
-		<h4 style="text-align: center"><a href="index.html" style="font-size:15px;">Retry</a></h4>
-	  </div>
-	</div>
-  </div>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacaranda Mix - Offline</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #3e0c4c;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 2em;
+            color: #fff;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #3e0c4c;
+            background-color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #e0dede;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img/splash.png" alt="Jacaranda Mix Logo" class="logo">
+        <h1>You're Offline</h1>
+        <p>It seems you're not connected to the internet. Please check your connection and try again.</p>
+        <a href="#" class="btn" onclick="window.location.reload();">Retry</a>
+    </div>
+</body>
+</html>
