@@ -32,7 +32,7 @@ const kAddToHomeScreenIos = true;
 const kAddToHomeScreenMd = true;
 const kSkipButton=true;
 const kSkipButtonText="Skip";
-const kAddToHomeScreenTitle="Jacaranda FM Live";
+const kAddToHomeScreenTitle="Jacaranda FM Remixed";
 const kAddToHomeScreenMdText="Save to desktop now";
 const kAddToHomeScreenIosText="Save to home screen now";
 const kImgMaxSize=10;
@@ -126,7 +126,7 @@ var app = new Framework7({
     "autoDarkTheme": false,
     "language": "en",
     "routes": routes,
-    "name": "Jacaranda FM Live",
+    "name": "Jacaranda FM Remixed",
     "initOnDeviceReady": true,
     "init": true,
     "iosTranslucentBars": true,

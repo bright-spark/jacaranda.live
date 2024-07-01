@@ -1,12 +1,12 @@
 {
 "short_name": "Jacaranda FM",
-"name": "Jacaranda FM Live",
+"name": "Jacaranda FM Remixed",
 "start_url": "./?utm_source=web_app_manifest",
 "display": "standalone",
 "orientation": "portrait",
 "theme_color": "#0d1117",
 "background_color": "#0d1117",
-"description": "Jacaranda FM Live Radio Player",
+"description": "Jacaranda FM Remixed Radio Player",
 "dir": "ltr",
 "lang": "en",
 "icons": [
