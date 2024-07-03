@@ -19,9 +19,31 @@
     <meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <style>
+        html,
+        body,
+        iframe {
+            margin: 0;
+            padding: 0;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            z-index: 999999;
+        }
+
+        iframe {
+            overflow: hidden;
+            display: block;
+            width: 100%;
+            border: none;
+        }
+    </style>
+
 </head>
 <body>
-    <iframe id="responsiveIframe" src="" width="100%" height="500px"></iframe>
+    <iframe id="responsiveIframe" src="" width="100%" height="100%"></iframe>
     <script nonce="2726c7f26c">
         function getDeviceType() {
             const ua = navigator.userAgent;
@@ -34,9 +56,9 @@
             const iframe = document.getElementById("responsiveIframe");
             const deviceType = getDeviceType();
             if (deviceType === "mobile") {
-                iframe.src = "mobile.html"; // Mobile site URL
+                iframe.src = "mobile.html";
             } else {
-                iframe.src = "desktop.html"; // Desktop site URL
+                iframe.src = "desktop.html";
             }
         }
         setIframeSource();
