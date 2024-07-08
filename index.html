@@ -30,6 +30,8 @@
       form-action 'self'"
     >-->
 
+    <link rel="preconnect" href="https://static.cloudflareinsights.com">
+
     <link rel="canonical" href="https://jacaranda.live" itemprop="url">
 
     <meta name="description" content="Playing the music you love" />
@@ -139,6 +141,19 @@
     <!--<script defer nonce="2726c7f26c" defer id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=kFFoD2JhHvlh"></script>-->
 
     <script nonce="2726c7f26c">
+        // Register service worker for offline capabilities
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/sw.js').then(function (registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+
+    <script nonce="2726c7f26c">
         // iOS no-bounce script
         document.addEventListener('touchmove', function (event) {
             event.preventDefault();
@@ -148,11 +163,24 @@
 </head>
 
 <body>
+    <!-- Splash screen displayed on page load -->
+    <div id="splash-screen" aria-hidden="true" role="presentation">
+        <img src="img/splash.webp" alt="Splash Screen">
+    </div>
 
     <iframe width="100%" height="100%" src="switch.html" title="Fan Player" frameborder="0"
         allow="autoplay; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen loading="lazy">
     </iframe>
+
+    <script nonce="2726c7f26c">
+        // Hide splash screen after 2000 milliseconds
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(() => {
+                document.getElementById('splash-screen').style.display = 'none';
+            }, 2000);
+        });
+    </script>
 
     <!-- Start of LiveChat (www.livechatinc.com) code
     <script nonce="2726c7f26c">
