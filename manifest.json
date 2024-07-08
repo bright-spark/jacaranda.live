@@ -1,7 +1,7 @@
 {
-  "short_name": "Jacaranda Fan",
-  "name": "Jacaranda Fan",
-  "description": "#1 Jacaranda Fan Radio Player",
+  "short_name": "Jacaranda Live",
+  "name": "Jacaranda Live",
+  "description": "#1 Jacaranda Live Radio Player",
   "start_url": "/",
   "scope": "/",
   "background_color": "#3e0c4c",
